@@ -1,29 +1,13 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector("#mensagem_informacao .message__text");
-
-
-
-function removerAcentos(texto) {
-    return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
-
-function textoValido(texto) {
-    const regex = /^[a-z\s]*$/;
-    return regex.test(removerAcentos(texto));
-}
+const boneco = document.querySelector(".boneco"); // Corrigido para querySelector com a classe correta
 
 function btnEncriptar() {
-    const textoOriginal = textArea.value;
-
-   
-    if (!textoValido(textoOriginal)) {
-        alert("O texto deve conter apenas letras minúsculas e sem acentos.");
-        return;
-    }
-
-    const textoEncriptado = encriptar(removerAcentos(textoOriginal));
+    const textoEncriptado = encriptar(textArea.value);
     mensagem.innerHTML = `<p>${textoEncriptado}</p>`;
-    textArea.value = ""; 
+    textArea.value = "";
+    
+    
 }
 
 function encriptar(stringEncriptada) {
@@ -38,16 +22,11 @@ function encriptar(stringEncriptada) {
 }
 
 function btnDesencriptar() {
-    const textoOriginal = textArea.value;
-
-    if (!textoValido(textoOriginal)) {
-        alert("Apenas letras minúsculas e sem acento.");
-        return;
-    }
-
-    const textoDesencriptado = desencriptar(removerAcentos(textoOriginal));
+    const textoDesencriptado = desencriptar(textArea.value);
     mensagem.innerHTML = `<p>${textoDesencriptado}</p>`;
     textArea.value = "";
+    
+   
 }
 
 function desencriptar(stringDesencriptada) {
@@ -64,5 +43,5 @@ function desencriptar(stringDesencriptada) {
 function btnCopiar() {
     const textoCopiado = document.querySelector("#mensagem_informacao p").textContent;
     navigator.clipboard.writeText(textoCopiado);
-    alert("Texto copiado para a área de transferência!");
+    alert("Texto copiado para área de transferência!");
 }

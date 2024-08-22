@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
-    background-color:var(--cor-primaria);    
+    background-color:var(--cor-primaria);   
     font-family: var(--fonte-primaria);
     box-sizing: border-box;
     }
@@ -181,6 +181,8 @@ h5 {
     }
 
 
+
+
 .btn-encriptar{
 
     background: var(--cor-rover);
@@ -250,7 +252,26 @@ h5 {
     margin-top: 3%;
     background-color:var(--cor-quartenaria);
     height: 50px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    position: relative; 
+    left: 0;
+
     
+    }
+
+
+
+    h5 {
+     color: var(--cor-terciaria);
+     font-weight: 300;
+
+
+
+
     }
 
 
@@ -273,21 +294,26 @@ h6{
    }
 
 
-
-
-
 @media (max-width: 1200px) {
 
+body {
+
+    overflow-x: hidden;
+    
+
+}
 
 main {
 
-    padding: 0px;
-    margin-left: 100px;
+    padding: 2px;
+    margin-left: 300px;
     gap: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto; 
+    text-align: center;
+    
                 
     }
 
@@ -295,24 +321,36 @@ main {
 .text-area{
 
     margin-left: 5px;
+    width: auto;
 
     }
+
+
+.informacao {
+
+   margin-left: 2px;
+   word-wrap: break-word; 
+   display: flex;
+   align-items: center; 
+  
+
+}
 
 
 h6{
 
     display: flex;
     gap: 3rem;
-    font-size: 15px;
+    font-size: 7px;
 
     }
 
 
 
 .mensagem {
-    padding-left: 0.900rem;
-    padding-right: 0.900rem;
-    margin-right: 140px;
+   
+    margin-right: 263px;
+    margin-left: 0px;
     background-image: none;
     margin-top: 40px;
     padding-top: 10px;
@@ -326,7 +364,18 @@ h6{
     width: 300px; 
     font-size: 20px;
     padding-top: 10px;
+    color: #020202;
     }
+
+.botoes {
+
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    gap: 12px;
+}
+
 
 .btn-encriptar{
 
@@ -337,6 +386,7 @@ h6{
     margin-top: 2px;
     font-size: 20px;
     margin-right: 50px;
+
     
     }
 
@@ -348,12 +398,20 @@ h6{
     margin-right: 100px;
     margin-top: 2px;
     font-size: 20px;   
-    }
+}
 
 
 .btn-copiar {
     margin-top: 100px;
     }
-   
+ 
+    
+h3{
+
+
+    font-size: 20px;
 }
+}
+
+
 
