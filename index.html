@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts-googleapi.com">
+    <link rel="preconnect" href="https://fonts-gstatics.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logoespaco" src="/imagens/espaco (1).png" alt="logo do espaço">
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="50" rows="15" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+              <img src="./imagens/icon.png "alt="ponto de exclamação icon">
+              <h6>Apenas letras minúsculas e sem acento.</h6>
+          </div>
+
+            <div class="botoes">  
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+  
+        <section>  
+            
+            <div class="mensagem">
+                <div id="mensagem_informacao">
+                    <div class="message__text">
+                        <h1>Nenhuma mensagem encontrada</h1>
+                        <h5>Digite um texto que você deseja criptografar ou desencriptografar.</h5>
+                    </div>
+                </div>
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h3>Desenvolvido por Luana Ribeiro. 2024</h3>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
