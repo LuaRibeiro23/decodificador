@@ -15,8 +15,10 @@ A letra "u" é substituída por "ufat"
 
 ## Requisitos:
 
-O sistema opera apenas com letras minúsculas.
-O usuário pode criptografar uma palavra e também revertê-la para sua forma original.
+- O sistema opera apenas com letras minúsculas.
+-  Não devem ser utilizados letras com acentos nem caracteres especiais.
+- O usuário pode criptografar uma palavra e também revertê-la para sua forma original.
+- 
 Exemplo:
 
 "gato" se transforma em "gaitober"
