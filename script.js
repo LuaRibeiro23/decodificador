@@ -1,6 +1,6 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector("#mensagem_informacao .message__text");
-const boneco = document.querySelector(".boneco"); // Corrigido para querySelector com a classe correta
+
 
 function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value);
