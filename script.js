@@ -48,7 +48,7 @@ function desencriptar(stringDesencriptada) {
 function btnCopiar() {
     const textoCopiado = document.querySelector("#mensagem_informacao p").textContent;
     navigator.clipboard.writeText(textoCopiado);
-    alert("Texto copiado para área de transferência!");
+    alert("Texto copiado para área de transferência.");
     
     }
 
