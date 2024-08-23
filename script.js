@@ -3,10 +3,15 @@ const mensagem = document.querySelector("#mensagem_informacao .message__text");
 
 
 function btnEncriptar() {
-    const textoEncriptado = encriptar(textArea.value);
-    mensagem.innerHTML = `<p>${textoEncriptado}</p>`;
-    textArea.value = "";
+    const texto = textArea.value;
     
+        if (/[\u00C0-\u00FF]/.test(texto)) {
+            alert("Por favor, remova os acentos e tente novamente.");
+            return; 
+        }
+        const textoEncriptado = encriptar(texto);
+        mensagem.innerHTML = `<p>${textoEncriptado}</p>`;
+        textArea.value = "";  
     
 }
 
@@ -44,4 +49,7 @@ function btnCopiar() {
     const textoCopiado = document.querySelector("#mensagem_informacao p").textContent;
     navigator.clipboard.writeText(textoCopiado);
     alert("Texto copiado para área de transferência!");
-}
+    
+    }
+
+
