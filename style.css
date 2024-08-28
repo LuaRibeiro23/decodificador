@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap=Montserrat&display=swap==css2?family=Orbitron:wght@400..900&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap=Montserrat&display=swap==' );
 
 :root {
     --fonte-primaria: 'Orbitron', sans-serif;
@@ -35,8 +35,10 @@ body {
 
 .logoespaco{
 
-    margin-left: 35px;
-    padding-top: 50px;  
+    margin-left: 100px;
+    padding-top: 60px;  
+    display:flex;
+   
 
     }
 
@@ -51,6 +53,7 @@ main{
     margin-bottom: 50px;
     margin-left: 80px;
     font-size: 50px;
+   
     
     
    
@@ -79,6 +82,12 @@ main{
         }
     }
  
+    
+
+
+
+
+
 
 
 .text-area {
@@ -92,6 +101,8 @@ main{
     background-color:var(--cor-primaria);    
     margin-left: 25px;
     align-items: center;
+    font-family: var(--fonte-secundaria);
+    
     
    
     }
@@ -115,8 +126,6 @@ main{
     flex-direction:column;
     align-items:center;
     justify-content: center; 
-    filter: drop-shadow(0 0 0.5rem #d4c298);
-    box-shadow: 0.5px 0.5px 0.5rem #d4c298;
     padding-top: 180px;
     color: #021f3d;
     background-image: url(./imagens/astronauta.png);
